@@ -65,18 +65,19 @@
   <section id="intro">
 
     <div class="intro-content">
-      <!-- <h2>Making <span>your ideas</span><br>happen!</h2> -->
+      <h2>Do you need <span>a kost?</span><br><span>Find</span> it now</h2>
       <div class="container">
         <form action="" method="post" role="form" class="contactForm">
           <div class="form-row">
-            <div class="form-group col-md-12">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+            <div class="form-group col-md-10" style="padding-left: 185px">
+              <input style="text-align: center;" type="text" name="name" class="form-control" id="name" placeholder="Type the address here" data-rule="minlen:1" data-msg="Please enter the address" />
               <div class="validation"></div>
             </div>
           </div>
           <div>
           <!-- <a href="#" class="btn-projects scrollto">Get Started</a> -->
-            <a href="#" class="btn-get-started scrollto">Search</a>
+            <!-- <a href="#" class="btn-get-started scrollto">Search</a> -->
+            <button class="btn-get-started" type="submit">Search</button>
           </div>
           <!-- <div class="text-center"><button type="submit">Send Message</button></div> -->
         </form>
@@ -103,51 +104,55 @@
     <!--==========================
       Services Section
     ============================-->
-    <section id="services">
+    <section id="team" class="wow fadeInUp">
       <div class="container">
         <div class="section-header">
-          <h2>Services</h2>
-          <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
+          <h2>Recomendations</h2>
         </div>
-
         <div class="row">
-
-          <div class="col-lg-6">
-            <div class="box wow fadeInLeft">
-              <div class="icon"><i class="fa fa-bar-chart"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident etiro rabeta lingo.</p>
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="img/team-1.jpg" alt=""></div>
+              <div class="details">
+                <h4>Price</h4>
+                <span>Address</span>
+              </div>
             </div>
           </div>
 
-          <div class="col-lg-6">
-            <div class="box wow fadeInRight">
-              <div class="icon"><i class="fa fa-picture-o"></i></div>
-              <h4 class="title"><a href="">Dolor Sitema</a></h4>
-              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata nodera clas.</p>
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="img/team-2.jpg" alt=""></div>
+              <div class="details">
+                <h4>Price</h4>
+                <span>Address</span>
+              </div>
             </div>
           </div>
 
-          <div class="col-lg-6">
-            <div class="box wow fadeInLeft" data-wow-delay="0.2s">
-              <div class="icon"><i class="fa fa-shopping-bag"></i></div>
-              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur trinige zareta lobur trade.</p>
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="img/team-3.jpg" alt=""></div>
+              <div class="details">
+                <h4>Price</h4>
+                <span>Address</span>
+              </div>
             </div>
           </div>
 
-          <div class="col-lg-6">
-            <div class="box wow fadeInRight" data-wow-delay="0.2s">
-              <div class="icon"><i class="fa fa-map"></i></div>
-              <h4 class="title"><a href="">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum rideta zanox satirente madera</p>
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="img/team-4.jpg" alt=""></div>
+              <div class="details">
+                <h4>Price</h4>
+                <span>Address</span>
+              </div>
             </div>
           </div>
-
         </div>
 
       </div>
-    </section><!-- #services -->
+    </section><!-- #team -->
 
     <!--==========================
       Clients Section
@@ -159,7 +164,7 @@
   <footer id="footer">
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>Reveal</strong>. All Rights Reserved
+        &copy; Copyright <strong>i-Kost</strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!--
@@ -168,7 +173,7 @@
           Licensing information: https://bootstrapmade.com/license/
           Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Reveal
         -->
-        <a href="https://bootstrapmade.com/">Free Bootstrap Templates</a> by BootstrapMade
+        Try to find your kost here
       </div>
     </div>
   </footer><!-- #footer -->
