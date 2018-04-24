@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>i-kost</title>
+  <title>i-</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -45,7 +45,7 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <h1><a href="#body" class="scrollto">i-<span>Kost</span></a></h1>
+        <h1><a href="#body" class="scrollto">i-Kost<span></span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
       </div>
@@ -94,7 +94,7 @@
       <div class="container">
         <div class="section-header">
           <h2 style="text-align: center;">Daftar Kosku</h2>
-          <div class="text-center"><button type="submit">Tambah Kost</button></div>
+          <div class="text-center"><button type="submit">Tambah </button></div>
         </div>
       </div>
       <div class="container-fluid">
@@ -142,8 +142,9 @@
                 </div>
               </a>
             </div>
+            <br>
           </div>
-
+          
           <div class="col-lg-3 col-md-4">
             <div class="portfolio-item wow fadeInUp">
               <a href="img/portfolio/5.jpg" class="portfolio-popup">
