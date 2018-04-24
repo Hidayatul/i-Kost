@@ -66,16 +66,20 @@
 
     <div class="intro-content">
       <!-- <h2>Making <span>your ideas</span><br>happen!</h2> -->
-
-      <form action="" method="post" role="form" class="contactForm">
-        <div class="form-group">
-          <input type="text" class="form-control" name="search" id="search" placeholder="Type the address here" data-rule="minlen:4" data-msg="Please enter the address" />
-          <div class="validation"></div>
-        </div>
-      </form>
-
-      <div>
-        <a href="#" class="btn-projects scrollto">Search</a>
+      <div class="container">
+        <form action="" method="post" role="form" class="contactForm">
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <div class="validation"></div>
+            </div>
+          </div>
+          <div>
+          <!-- <a href="#" class="btn-projects scrollto">Get Started</a> -->
+            <a href="#" class="btn-get-started scrollto">Search</a>
+          </div>
+          <!-- <div class="text-center"><button type="submit">Send Message</button></div> -->
+        </form>
       </div>
     </div>
 
