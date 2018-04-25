@@ -43,7 +43,7 @@
   <br>
 
   <div class="">
-  <form class="form-horizontal" action=" " method="post"  id="reg_form">
+  <form class="form-horizontal" action="../daftarkosku.html" method="post"  id="reg_form">
     <fieldset>
       
       <!-- Form Name -->
@@ -276,7 +276,7 @@
 
       <div style="text-align: center; ">
         <legend style="font-size: 20px"><b>Kode Verifikasi</b> 
-          <input  name="first_name" placeholder="Kode Verifikasi" class="form-control"  type="text" style="text-align: center; width: 50%; margin-left: 150px">
+          <input  name="kodeverifikasi" placeholder="X X X X" class="form-control"  type="text" style="text-align: center; width: 50%; margin-left: 150px">
         </legend>
         <!-- <input  name="first_name" placeholder="Kode Verifikasi" class="form-control"  type="text"> -->
       </div>
@@ -291,7 +291,8 @@
       </div> -->
 
       <div class="">
-          <button type="submit" class="btn-get-started" style=""><a href="../daftarkosku.html" style="">Submit</a></button>
+          <button type="submit" class="btn-get-started" style="">
+          Submit</button>
         </div>
     </fieldset>
   </form>
@@ -347,13 +348,13 @@
             validating: 'glyphicon glyphicon-refresh'
         },
         fields: {
-            first_name: {
+            kodeverifikasi: {
                 validators: {
                         stringLength: {
-                        min: 2,
+                        min: 4, max: 4,
                     },
                         notEmpty: {
-                        message: 'Please supply your first name'
+                        message: 'Please supply your verification code'
                     }
                 }
             },
