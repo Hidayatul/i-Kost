@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>i-</title>
+  <title>i-kost</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -45,7 +45,7 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <h1><a href="#body" class="scrollto">i-Kost<span></span></a></h1>
+        <h1><a href="#body" class="scrollto">i-<span>Kost</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
       </div>
@@ -299,7 +299,7 @@
   <footer id="footer">
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>Reveal</strong>. All Rights Reserved
+        &copy; Copyright <strong>i-Kost</strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!--
@@ -308,7 +308,7 @@
           Licensing information: https://bootstrapmade.com/license/
           Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Reveal
         -->
-        <a href="https://bootstrapmade.com/">Free Bootstrap Templates</a> by BootstrapMade
+        Try to find your kost here
       </div>
     </div>
   </footer><!-- #footer -->

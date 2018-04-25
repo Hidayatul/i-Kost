@@ -99,61 +99,64 @@
     <!--==========================
       About Section
     ============================-->
-    
-
-    <!--==========================
-      Services Section
-    ============================-->
-    <section id="team" class="wow fadeInUp">
+  
+    <section id="portfolio" class="wow fadeInUp">
       <div class="container">
         <div class="section-header">
-          <h2>Recomendations</h2>
+          <h2 style="text-align: center;">Recomendations</h2>
         </div>
-        <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="img/team-1.jpg" alt=""></div>
-              <div class="details">
-                <h4>Price</h4>
-                <span>Address</span>
-              </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="portfolio-item wow fadeInUp">
+              <a href="img/portfolio/c.jpg" class="portfolio-popup">
+                <img src="img/portfolio/c.jpg" alt="">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-info"><h2 class="wow fadeInUp">Kosong</h2></div>
+                </div>
+              </a>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="img/team-2.jpg" alt=""></div>
-              <div class="details">
-                <h4>Price</h4>
-                <span>Address</span>
-              </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="portfolio-item wow fadeInUp">
+              <a href="img/portfolio/e.jpg" class="portfolio-popup">
+                <img src="img/portfolio/e.jpg" alt="">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-info"><h2 class="wow fadeInUp">Kosong</h2></div>
+                </div>
+              </a>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="img/team-3.jpg" alt=""></div>
-              <div class="details">
-                <h4>Price</h4>
-                <span>Address</span>
-              </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="portfolio-item wow fadeInUp">
+              <a href="img/portfolio/g.jpg" class="portfolio-popup">
+                <img src="img/portfolio/g.jpg" alt="">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-info"><h2 class="wow fadeInUp">Kosong</h2></div>
+                </div>
+              </a>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="img/team-4.jpg" alt=""></div>
-              <div class="details">
-                <h4>Price</h4>
-                <span>Address</span>
-              </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="portfolio-item wow fadeInUp">
+              <a href="img/portfolio/j.jpg" class="portfolio-popup">
+                <img src="img/portfolio/j.jpg" alt="">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-info"><h2 class="wow fadeInUp">Portfolio Item 2</h2></div>
+                </div>
+              </a>
             </div>
           </div>
+
         </div>
 
       </div>
-    </section><!-- #team -->
-
+    </section><!-- #portfolio -->
     <!--==========================
       Clients Section
     ============================-->
