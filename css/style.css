@@ -36,6 +36,14 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
+/*scroll div*/
+.scrollable {
+  /*width:500px;*/
+  max-height:450px;
+  /*background-color:Red;*/
+  overflow-y:scroll;
+}
+
 /* Back to top button */
 .back-to-top {
   position: fixed;
@@ -501,16 +509,25 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Sections Header
 --------------------------------*/
 .section-header {
-  margin-bottom: 30px;
+  margin-bottom: 5px;
 }
 
-.section-header h2 {
-  font-size: 32px;
+.section-header h3 {
+  font-size: 24px;
   color: #0c2e8a;
   text-transform: uppercase;
   font-weight: 700;
   position: relative;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
+}
+
+.section-header h2 {
+  font-size: 28px;
+  color: #0c2e8a;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 5px;
 }
 
 .section-header h2::before {
