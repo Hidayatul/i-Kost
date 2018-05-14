@@ -52,19 +52,27 @@
   <!--==========================
     Header
   ============================-->
-  <header id="header">
+  <header id="header" style="height: 115px">
     <div class="container">
 
       <div id="logo" class="pull-left">
         <h1><a href="#body" class="scrollto">i-<span>Kost</span></a></h1>
+        <br>
+        <h1 style="font-size: 16px ">
+          <a href="#body">Beranda </a>
+          <i class="fa fa-angle-double-right"></i>
+          <a style="color: #50d8af" href="#">Hasil Pencarian </a>
+        </h1>
+        <br>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
       </div>
 
+
       <nav id="nav-menu-container">
-        <ul class="nav-menu">
-          <li class="menu-active"><a href="#body">Beranda</a></li>
-          <li><a href="loginfix/login.html">Masuk</a></li>
+        <ul class="nav-menu" >
+          <li class=""><a href="#body" style="font-size: 16px ">Beranda</a></li>
+          <li><a href="loginfix/login.html" style="font-size: 16px ">Masuk</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -73,23 +81,29 @@
   <!--==========================
     Intro Section
   ============================-->
-  <section id="intro">
+  <section id="intro" style="height: 300px">
     
-    <div class="container">
+    <div class="container" >
       <div class="intro-content">
-        <h2>Kamu membutuhkan <span>kos?</span><br><span>Temukan</span> sekarang!</h2>
-        <div class="container">
+        <!-- <h2>Kamu membutuhkan <span>kos?</span><br><span>Temukan</span> sekarang!</h2> -->
+        <div class="container" >
           <form action="" method="post" role="form" class="contactForm">
             <div class="form-row">
               <div class="form-group col-md-10" style="padding-left: 185px">
-                <input style="text-align: center;" type="text" name="name" class="form-control" id="name" placeholder="Masukkan wilayah yang Anda inginkan" data-rule="minlen:1" data-msg="Please enter the address" />
-                <div class="validation"></div>
+                <input style="text-align: center; height: 50px; font-size: 20px"  type="text" name="name" class="form-control" id="name" placeholder="Masukkan wilayah yang Anda inginkan" data-rule="minlen:1" data-msg="Please enter the address" list="wilayah" />
+                  <datalist id="wilayah">
+                    <option>Bumi Marina Emas</option>
+                    <option>Keputih</option>
+                    <option>Keputih Tegal Timur</option>
+                    <option>Mulyosari</option>
+                  </datalist>
               </div>
             </div>
+            
             <div>
             <!-- <a href="#" class="btn-projects scrollto">Get Started</a> -->
               <!-- <a href="#" class="btn-get-started scrollto">Search</a> -->
-              <button class="btn-get-started" type="submit">Cari</button>
+              <button class="btn-get-started" type="submit" style="font-size: 18px">Cari</button>
             </div>
             <!-- <div class="text-center"><button type="submit">Send Message</button></div> -->
           </form>
@@ -98,12 +112,12 @@
     </div>
 
 
-    <div id="intro-carousel" class="owl-carousel" >
-      <div class="item" style="background-image: url('img/intro-carousel/selasar-atas-1024x768.jpg');"></div>
-      <div class="item" style="background-image: url('img/intro-carousel/kost jimbaran bali-16.jpg');"></div>
-      <div class="item" style="background-image: url('img/intro-carousel/66.jpg');"></div>
-      <div class="item" style="background-image: url('img/intro-carousel/bisnis-kos-kosan.jpg');"></div>
-      <div class="item" style="background-image: url('img/intro-carousel/11.jpg');"></div>
+    <div id="intro-carousel" class="owl-carousel" style="height: 300px; opacity: 0.4">
+      <div class="item" style="background-image: url('img/intro-carousel/selasar-atas-1024x768.jpg'); height: 300px"></div>
+      <div class="item" style="background-image: url('img/intro-carousel/kost jimbaran bali-16.jpg'); height: 300px"></div>
+      <div class="item" style="background-image: url('img/intro-carousel/66.jpg'); height: 300px"></div>
+      <div class="item" style="background-image: url('img/intro-carousel/bisnis-kos-kosan.jpg'); height: 300px"></div>
+      <div class="item" style="background-image: url('img/intro-carousel/11.jpg'); height: 300px"></div>
     </div>
 
   </section><!-- #intro -->
@@ -115,170 +129,193 @@
     ============================-->
     <section id="result">
       <div style="margin-top: 20px">
-      <div class="col-md-12 ">
+        <div class="col-md-12 ">
 
-        <div class="col-md-3 scrollable">
-          <div class="panel box-v4">
-              <div class="panel-heading bg-white border-none">
-                <div class="section-header">
-                  <h3 style="text-align: center;">Atur Pencarian</h3>
+          <div class="col-md-3 scrollable">
+            <div class="panel box-v4" >
+                <div class="panel-heading " style="background-color: #e2e2e2">
+                  <div class="section-header" style="height: 20px; ">
+                    <h3 style="text-align: center; margin-top: 5px">Atur Pencarian</h3>
+                  </div>
                 </div>
-                <!-- <h4><span class="icon-notebook icons"></span> Atur Pencarian</h4> -->
-              </div>
 
-              <div class="panel-body padding-0 col-md-12 border-none">
-                  <div class="col-md-6  padding-0 box-v4-alert">
-                    <p style="font-size: 16px"><b>Tipe Kos</b></p>
-                    <p style="font-size: 16px"><b>Ketersediaan Kamar</b></p>
-                    <p style="font-size: 16px"><b>Jangka Waktu</b></p>
-                    <p style="font-size: 16px"><b>Urutkan Berdasar Harga</b></p>
-                    <p style="font-size: 16px"><b>Rentang Harga</b></p>
-                    <p style="font-size: 16px"><b>Fasilitas</b></p>
-                  </div>
+                <div class="panel-body padding-0 col-md-12 border-none">
+                  <div class="row-md-12">
+                      <div class="col-md-12  padding-0 box-v4-alert">
+                        <p style="font-size: 16px; "><b>Tipe Kos : </b>
+                        <select style="font-size: 16px; width: 230px; text-align: center;" >
+                          <option value="volvo">Semua Tipe</option>
+                          <option value="volvo">Campuran</option>
+                          <option value="saab">Laki-laki</option>
+                          <option value="opel">Perempuan</option>
+                        </select>
+                        </p>
 
-                  <div class="col-md-6 padding-0 box-v4-alert" >
-                    <select style="font-size: 16px">
-                      <option value="volvo">Volvo</option>
-                      <option value="saab">Saab</option>
-                      <option value="opel">Opel</option>
-                      <option value="audi">Audi</option>
-                    </select>
+                        <div style="padding-top: 25px"></div>
+
+                        <p style="font-size: 16px; "><b>Ketersediaan Kamar : </b>
+                        <select style="font-size: 16px; width: 230px; text-align: center;" >
+                          <option value="volvo">Semua Ketersediaan Kamar</option>
+                          <option value="volvo">< 4 kamar</option>
+                          <option value="saab">4 kamar - 8 kamar</option>
+                          <option value="opel">> 8 kamar</option>
+                        </select>
+                        </p>
+
+                        <div style="padding-top: 25px"></div>
+
+                        <p style="font-size: 16px; "><b>Jangka Waktu : </b>
+                        <select style="font-size: 16px; width: 230px; text-align: center;" >
+                          <option value="volvo">Semua Jangka Waktu</option>
+                          <option value="volvo">Harian</option>
+                          <option value="saab">Bulanan</option>
+                          <option value="opel">Tahunan</option>
+                        </select>
+                        </p>
+
+                        <div style="padding-top: 25px"></div>
+
+                        <p style="font-size: 16px; "><b>Urutkan Berdasar Harga : </b>
+                        <select style="font-size: 16px; width: 230px; text-align: center;" >
+                          <option value="volvo">Terendah-Tertinggi</option>
+                          <option value="saab">Tertinggi-Terendah</option>
+                        </select>
+                        </p>
+
+                        <div style="padding-top: 25px"></div>
+
+                        <p style="font-size: 16px; "><b>Rentang Harga : </b>
+                        <select style="font-size: 16px; width: 230px; text-align: center;" >
+                          <option value="volvo">Semua Harga</option>
+                          <option value="volvo">< Rp 500.000</option>
+                          <option value="volvo">Rp 500.000 - Rp 1000.000</option>
+                          <option value="volvo">Rp 1000.000 - Rp 1500.000</option>
+                          <option value="volvo">> Rp 1500.000</option>
+                        </select>
+                        </p>
+
+                        <div style="padding-top: 25px"></div>
+
+                        <p style="font-size: 16px; "><b>Fasilitas : </b>
+                        <div style="font-size: 16px; width: 230px;" >
+                          <input type="checkbox" name="vehicle" value="Car" checked> Laundri<br>
+                          <input type="checkbox" name="vehicle" value="Car" checked> Listrik<br>
+                          <input type="checkbox" name="vehicle" value="Car" checked> Keamanan 24 Jam<br>
+                          <input type="checkbox" name="vehicle" value="Car" checked> Kebersihan<br>
+                          <input type="checkbox" name="vehicle" value="Car" checked> Kamar Mandi Dalam<br>
+                          <input type="checkbox" name="vehicle" value="Car" checked> Kamar Mandi Luar<br>
+                          <input type="checkbox" name="vehicle" value="Car" checked> PDAM<br>
+                          <input type="checkbox" name="vehicle" value="Car" checked> Penjaga Kos 24 Jam<br>
+                          <input type="checkbox" name="vehicle" value="Bike"> WiFi<br>
+                        </div>
+                        </p>
+                       
+                        <hr>
+                        <div style="text-align: right;">
+                          <a href="result_search.html"><button class="btn-get-started" type="submit" style="font-size: 16px; background-color: #e2e2e2; color: #000000"><b>Cari</b></button></a>
+                        </div>
                       
-                      <select style="font-size: 16px">
-                        <option value="volvo">Volvo</option>
-                        <option value="saab">Saab</option>
-                        <option value="opel">Opel</option>
-                        <option value="audi">Audi</option>
-                      </select>
+                      </div>
+                  </div>  
+                        
 
-                      <select style="font-size: 16px">
-                        <option value="volvo">Volvo</option>
-                        <option value="saab">Saab</option>
-                        <option value="opel">Opel</option>
-                        <option value="audi">Audi</option>
-                      </select>
-
-                      <select style="font-size: 16px">
-                        <option value="volvo">Volvo</option>
-                        <option value="saab">Saab</option>
-                        <option value="opel">Opel</option>
-                        <option value="audi">Audi</option>
-                      </select>
-
-                      <select style="font-size: 16px">
-                        <option value="volvo">Volvo</option>
-                        <option value="saab">Saab</option>
-                        <option value="opel">Opel</option>
-                        <option value="audi">Audi</option>
-                      </select>
-                      
-                      
-                  </div>
-              </div>
-          </div> 
-        </div>
-
-        <div class="col-md-9 scrollable">
-          <div class="panel box-v4">
-              <div class="panel-heading bg-white border-none">
-                <div class="section-header">
-                  <h2 style="text-align: center;">Hasil Pencarian</h2>
+                  
                 </div>
-                <!-- <h4><span class="icon-notebook icons"></span> Agenda</h4> -->
-              </div>
-              <div class="panel-body padding-0">
-                  <div class="col-md-12 col-xs-12 col-md-12 padding-0 box-v4-alert">
-                      <h2>Checking Your Server!</h2>
-                      <p>Daily Check on Server status, mostly looking at servers with alerts/warnings</p>
-                      <b><span class="icon-clock icons"></span> Today at 15:00</b>
-                      <h2>Checking Your Server!</h2>
-                      <p>Daily Check on Server status, mostly looking at servers with alerts/warnings</p>
-                      <b><span class="icon-clock icons"></span> Today at 15:00</b>
-                      <h2>Checking Your Server!</h2>
-                      <p>Daily Check on Server status, mostly looking at servers with alerts/warnings</p>
-                      <b><span class="icon-clock icons"></span> Today at 15:00</b>
-                      <h2>Checking Your Server!</h2>
-                      <p>Daily Check on Server status, mostly looking at servers with alerts/warnings</p>
-                      <b><span class="icon-clock icons"></span> Today at 15:00</b>
-                      <h2>Checking Your Server!</h2>
-                      <p>Daily Check on Server status, mostly looking at servers with alerts/warnings</p>
-                      <b><span class="icon-clock icons"></span> Today at 15:00</b>
+            </div> 
+          </div>
+
+          <div class="col-md-9 scrollable">
+            <div class="panel box-v4">
+                <div class="panel-heading " style="background-color: #e2e2e2" >
+                  <div class="section-header" style="height: 20px">
+                    <h2 style="text-align: center; margin-top: 5px">Hasil Pencarian</h2>
                   </div>
-                  <div class="calendar">
-                    
-                  </div>
-              </div>
-          </div> 
+                </div>
+
+                <div class="panel-body padding-0 col-md-12 border-none">
+                    <div class="col-md-12 box-v4-alert">
+                        <section id="portfolio" class="wow fadeInUp" >
+                          <div class="row">
+                            <!-- <div class="row"> -->
+                              <div class="col-lg-4 col-md-3" style="padding-bottom: 25px">
+                                <div class="portfolio-item wow fadeInUp">
+                                  <a href="img/portfolio/c.jpg" class="portfolio-popup">
+                                    <img src="img/portfolio/c.jpg" alt="">
+                                    <div class="portfolio-overlay">
+                                      <div class="portfolio-info"><h2 style="margin-top: 150px; text-align: center; font-size: 20px;">Alamat Kos</h2></div>
+                                    </div>  
+                                  </a>
+                                </div>
+                              </div>
+
+                              <div class="col-lg-4 col-md-3">
+                                <div class="portfolio-item wow fadeInUp">
+                                  <a href="img/portfolio/c.jpg" class="portfolio-popup">
+                                    <img src="img/portfolio/c.jpg" alt="">
+                                    <div class="portfolio-overlay">
+                                      <div class="portfolio-info"><h2 style="margin-top: 150px; text-align: center; font-size: 20px;">Alamat Kos</h2></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+
+                              <div class="col-lg-4 col-md-3">
+                                <div class="portfolio-item wow fadeInUp">
+                                  <a href="img/portfolio/c.jpg" class="portfolio-popup">
+                                    <img src="img/portfolio/c.jpg" alt="">
+                                    <div class="portfolio-overlay">
+                                      <div class="portfolio-info"><h2 style="margin-top: 150px; text-align: center; font-size: 20px;">Alamat Kos</h2></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+
+                              <div class="col-lg-4 col-md-3">
+                                <div class="portfolio-item wow fadeInUp">
+                                  <a href="img/portfolio/c.jpg" class="portfolio-popup">
+                                    <img src="img/portfolio/c.jpg" alt="">
+                                    <div class="portfolio-overlay">
+                                      <div class="portfolio-info"><h2 style="margin-top: 150px; text-align: center; font-size: 20px;">Alamat Kos</h2></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                        
+                              <div class="col-lg-4 col-md-3">
+                                <div class="portfolio-item wow fadeInUp">
+                                  <a href="img/portfolio/c.jpg" class="portfolio-popup">
+                                    <img src="img/portfolio/c.jpg" alt="">
+                                    <div class="portfolio-overlay">
+                                      <div class="portfolio-info"><h2 style="margin-top: 150px; text-align: center; font-size: 20px;">Alamat Kos</h2></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+
+                              <div class="col-lg-4 col-md-3">
+                                <div class="portfolio-item wow fadeInUp">
+                                  <a href="img/portfolio/c.jpg" class="portfolio-popup">
+                                    <img src="img/portfolio/c.jpg" alt="">
+                                    <div class="portfolio-overlay">
+                                      <div class="portfolio-info"><h2 style="margin-top: 150px; text-align: center; font-size: 20px;">Alamat Kos</h2></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+
+                              
+                            <!-- </div>  -->
+
+                          </div>
+                        </section><!-- #portfolio -->
+                    </div>
+                </div>
+            </div> 
+          </div>
         </div>
-      </div>
       </div>
     </section>
 
-    <!--==========================
-      Services Section
-    ============================-->
-    <!-- <section id="portfolio" class="wow fadeInUp">
-      <div class="col-md-10">
-        <div class="container" style="text-align: center;">
-          <div class="section-header">
-            <h2 style="text-align: center;">Recomendations</h2>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="container-fluid">
-        <div class="row no-gutters">
-
-          <div class="col-lg-3 col-md-4">
-            <div class="portfolio-item wow fadeInUp">
-              <a href="img/portfolio/c.jpg" class="portfolio-popup">
-                <img src="img/portfolio/c.jpg" alt="">
-                <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Kosong</h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="portfolio-item wow fadeInUp">
-              <a href="img/portfolio/e.jpg" class="portfolio-popup">
-                <img src="img/portfolio/e.jpg" alt="">
-                <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Kosong</h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="portfolio-item wow fadeInUp">
-              <a href="img/portfolio/g.jpg" class="portfolio-popup">
-                <img src="img/portfolio/g.jpg" alt="">
-                <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Kosong</h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="portfolio-item wow fadeInUp">
-              <a href="img/portfolio/j.jpg" class="portfolio-popup">
-                <img src="img/portfolio/j.jpg" alt="">
-                <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Portfolio Item 2</h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section> -->
-    <!-- #portfolio -->
   </main>
 
     <!--==========================
