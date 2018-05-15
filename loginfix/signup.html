@@ -9,12 +9,12 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sign Up i-Kost</title>
+<title>Buat Akun i-Kost</title>
 
 <!-- Favicons -->
   <!-- <link href="img/favicon.png" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon"> -->
-  <link rel="icon" type="image/png" href="../img/favicon.png"/>
+  <link rel="icon" type="image/png" href="../img/info.png"/>
 
 <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
@@ -43,14 +43,15 @@
   <br>
 
   <div class="">
-  <form class="form-horizontal" action="verifikasi.html" method="post"  id="reg_form">
+  <form class="form-horizontal" action="verifikasiakun.html" method="post"  id="reg_form">
     <fieldset>
       
       <!-- Form Name -->
       
-      <legend style="font-size: 39px; text-align: center;" >
-        <!-- <a href=""><i class="fa fa-chevron-left" style="font-size:30px;  "></i></a> -->
-        <b>Sign Up</b>
+      <legend style="font-size: 35px; text-align: left;" >
+        <a href="../beranda.html"><i class="fa fa-home" style="font-size:35px;"></i></a>
+        <span style="margin-left: 80px;"><b>Buat Akun Pemilik Kos </span></b></span>
+        
       </legend>
       <!-- <span class="login100-form-title" ><b>Sign Up</b></span>
       <hr> -->
@@ -58,10 +59,10 @@
       <!-- Text input-->
     <fieldset > 
       <div class="form-group">
-        <label class="col-md-4 control-label">Full Name</label>
+        <label class="col-md-4 control-label">Nama Lengkap</label>
         <div class="col-md-6  inputGroupContainer">
           <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-            <input  name="first_name" placeholder="Full Name" class="form-control"  type="text">
+            <input  name="first_name" placeholder="Nama Lengkap" class="form-control"  type="text">
           </div>
         </div>
       </div>
@@ -92,10 +93,10 @@
       <!-- Text input-->
       
       <div class="form-group">
-        <label class="col-md-4 control-label">Address</label>
+        <label class="col-md-4 control-label">Alamat</label>
         <div class="col-md-6  inputGroupContainer">
           <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-            <input name="address" placeholder="Address" class="form-control" type="text">
+            <input name="address" placeholder="Alamat" class="form-control" type="text">
           </div>
         </div>
       </div>
@@ -103,7 +104,7 @@
       <!-- Text input-->
       
       <div class="form-group">
-        <label class="col-md-4 control-label">Phone</label>
+        <label class="col-md-4 control-label">Nomor Telepon</label>
         <div class="col-md-6  inputGroupContainer">
           <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
             <input name="phone" placeholder="(+62) 555-1212" class="form-control" type="text">
@@ -217,16 +218,16 @@
         <label class="col-md-4 control-label">E-Mail</label>
         <div class="col-md-6  inputGroupContainer">
           <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-            <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+            <input name="email" placeholder="Alamat E-Mail" class="form-control"  type="text">
           </div>
         </div>
       </div>
 
       <div class="form-group">
-        <label class="col-md-4 control-label">Username</label>
+        <label class="col-md-4 control-label">Nama Pengguna</label>
         <div class="col-md-6  inputGroupContainer">
           <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-            <input  name="first_name" placeholder="Username" class="form-control"  type="text">
+            <input  name="last_name" placeholder="Nama Pengguna" class="form-control"  type="text">
           </div>
         </div>
       </div>
@@ -234,11 +235,11 @@
     
         <div class="form-group has-feedback">
             <label for="password"  class="col-md-4 control-label">
-              Password
+              Kata Sandi
             </label>
                 <div class="col-md-6  inputGroupContainer">
                 <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-            <input class="form-control" id="userPw" type="password" placeholder="password" 
+            <input class="form-control" id="userPw" type="password" placeholder="Kata Sandi" 
                        name="password" data-minLength="5"
                        data-error="some error"
                        required/>
@@ -268,13 +269,13 @@
       <!-- Button -->
       <div class="form-group">
         <label class="col-md-4 control-label"></label>
-        <div class="col-md-6">
-          <button type="submit" class="btn-get-started" style="margin-left: 140px">Sign Up</button>
+        <div class="col-md-7">
+          <button type="submit" class="btn-get-started" style="margin-left: 115px">Buat Akun</button>
         </div>
       </div>
 
       <div style="text-align: center; ">
-        <legend style="font-size: 14px">Already have account? <a href="login.html" class="" ><b>Login</b></a></legend>
+        <legend style="font-size: 14px; padding-bottom: 10px; margin-top: -15px">Sudah punya akun pemilik kos? <a href="login.html" class="" ><b>Masuk sekarang</b></a></legend>
       </div>
     </fieldset>
   </form>
@@ -336,7 +337,7 @@
                         min: 2,
                     },
                         notEmpty: {
-                        message: 'Please supply your first name'
+                        message: 'Mohon masukkan nama lengkap Anda'
                     }
                 }
             },
@@ -346,7 +347,7 @@
                         min: 2,
                     },
                     notEmpty: {
-                        message: 'Please supply your last name'
+                        message: 'Mohon masukkan nama pengguna Anda'
                     }
                 }
             },
@@ -354,7 +355,7 @@
             phone: {
                 validators: {
                     notEmpty: {
-                        message: 'Please supply your phone number'
+                        message: 'Mohon masukkan nomor telepon Anda'
                     },
                     // phone: {
                     //     country: 'US',
@@ -368,7 +369,7 @@
                         min: 8,
                     },
                     notEmpty: {
-                        message: 'Please supply your street address'
+                        message: 'Mohon masukkan alamat tempat tinggal Anda'
                     }
                 }
             },
@@ -415,10 +416,10 @@
 	 email: {
                 validators: {
                     notEmpty: {
-                        message: 'Please supply your email address'
+                        message: 'Mohon masukkan alamat email Anda'
                     },
                     emailAddress: {
-                        message: 'Please supply a valid email address'
+                        message: 'Mohon masukkan alamat email Anda yang valid'
                     }
                 }
             },
@@ -428,7 +429,7 @@
 
                 stringLength: {
                         min: 8,
-                        message:'Please enter at least 8 characters'
+                        message:'Mohon masukkan sedikitnya 8 karakter'
                 },
             }
         },
@@ -436,7 +437,7 @@
             validators: {
                 identical: {
                     field: 'password',
-                    message: 'The password and its confirm are not the same'
+                    message: 'Kata sandi dan konfirmasi kata sandi tidak cocok'
                 }
             }
          },

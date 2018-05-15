@@ -9,12 +9,12 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Verifikasi Akun</title>
+<title>Verifikasi Akun i-Kost</title>
 
 <!-- Favicons -->
   <!-- <link href="img/favicon.png" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon"> -->
-  <link rel="icon" type="image/png" href="../img/favicon.png"/>
+  <link rel="icon" type="image/png" href="../img/info.png"/>
 
 <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
@@ -43,14 +43,14 @@
   <br>
 
   <div class="">
-  <form class="form-horizontal" action="../daftarkosku.html" method="post"  id="reg_form">
+  <form class="form-horizontal" action="../daftarkos_awal.html" method="post"  id="reg_form">
     <fieldset>
       
       <!-- Form Name -->
       
       <legend style="font-size: 39px; text-align: center;" >
         <!-- <a href=""><i class="fa fa-chevron-left" style="font-size:30px;  "></i></a> -->
-        <b>Verifikasi Akun</b>
+        <b>Verifikasi Akun Pemilik Kos</b>
       </legend>
       <!-- <span class="login100-form-title" ><b>Sign Up</b></span>
       <hr> -->
@@ -266,34 +266,46 @@
      
   
       <!-- Button -->
-      <div class=>
+      <div class="col-md-12">
         <!-- <label class="col-md-4 control-label"></label> -->
-        <div class="">
-          <button type="" class="btn-get-started" style="">No. HP</button>
-          <button type="" class="btn-get-started" style="">Email</button>
-        </div>
-      </div>
 
-      <div style="text-align: center; ">
-        <legend style="font-size: 20px"><b>Kode Verifikasi</b> 
-          <input  name="kodeverifikasi" placeholder="X X X X" class="form-control"  type="text" style="text-align: center; width: 50%; margin-left: 150px">
-        </legend>
-        <!-- <input  name="first_name" placeholder="Kode Verifikasi" class="form-control"  type="text"> -->
-      </div>
 
-      <!-- <div class="form-group">
-        <label class="col-md-4 control-label">Full Name</label>
-        <div class="col-md-6  inputGroupContainer">
-          <div class="input-group"> <span class="input-group-addon"></span>
-            <input  name="first_name" placeholder="Kode Verifikasi" class="form-control"  type="text">
+        <div style="text-align: center; ">
+          <legend style="font-size: 20px">
+            <b>Kode Verifikasi</b> 
+
+            <div class="form-group">
+              <div class="col-md-12  inputGroupContainer">
+                <div class="input-group">
+                  <input  name="kodeverifikasi" placeholder="Masukkan kode verifikasi yang telah dikirim ke email Anda." class="form-control"  type="text" style="text-align: center; width: 170%; margin-left: 70px">
+                </div>
+              </div>
+            </div>
+
+            <!-- <input  name="kodeverifikasi" placeholder="Masukkan kode verifikasi yang telah dikirim ke email Anda." class="form-control"  type="text" style="text-align: center; width: 80%; margin-left: 60px">
+            <br> -->
+            
+            <div class="">
+                <button type="submit" class="btn-get-started" style="text-align: center; margin-left: 5px">
+                Verifikasi</button>
+            </div>
+            
+          </legend>
+
+          <div style="text-align: center; ">
           </div>
+          
         </div>
-      </div> -->
+
+      </div>
+
+      <br>
 
       <div class="">
-          <button type="submit" class="btn-get-started" style="">
-          Submit</button>
-        </div>
+        <p style="font-size: 14px; padding-bottom: 10px; margin-top: -15px; text-align: center;">Belum menerima email verifikasi? <a href="verifikasi.html" class="" ><b>Kirim ulang</b></a></p>
+      </div>
+
+      
     </fieldset>
   </form>
   </div>
@@ -344,7 +356,7 @@
         // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
         feedbackIcons: {
             valid: 'glyphicon glyphicon-ok',
-            invalid: 'glyphicon glyphicon-remove',
+            // invalid: 'glyphicon glyphicon-remove',
             validating: 'glyphicon glyphicon-refresh'
         },
         fields: {
@@ -354,7 +366,7 @@
                         min: 4, max: 4,
                     },
                         notEmpty: {
-                        message: 'Please supply your verification code'
+                        message: 'Masukkan kode verifikasi yang dikirim ke email Anda'
                     }
                 }
             },
