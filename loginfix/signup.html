@@ -96,7 +96,7 @@
         <label class="col-md-4 control-label">Alamat</label>
         <div class="col-md-6  inputGroupContainer">
           <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-            <input name="address" placeholder="Alamat" class="form-control" type="text">
+            <input name="address" placeholder="Alamat" class="form-control" type="text" >
           </div>
         </div>
       </div>
@@ -107,7 +107,7 @@
         <label class="col-md-4 control-label">Nomor Telepon</label>
         <div class="col-md-6  inputGroupContainer">
           <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-            <input name="phone" placeholder="(+62) 555-1212" class="form-control" type="text">
+            <input name="phone" placeholder="(+62) 555-1212" class="form-control" type="text" pattern="[0-9]+">
           </div>
         </div>
       </div>
@@ -358,8 +358,13 @@
                         message: 'Mohon masukkan nomor telepon Anda'
                     },
                     // phone: {
-                    //     country: 'US',
+                    //     country: 'ID',
                     //     message: 'Please supply a vaild phone number with area code'
+                    // }
+                    // function validAngka(a){
+                    //   if(!/^[0-9.]+$/.test(a.value)){
+                    //   a.value = a.value.substring(0,a.value.length-1000);
+                    //   }
                     // }
                 }
             },
