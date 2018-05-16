@@ -860,8 +860,9 @@ Website: http://emilcarlsson.se/
 			<div class="social-media">
 				<i class="fa fa-facebook-abaikan" aria-hidden="true"></i>
 				<i class="fa fa-twitter-abaikan" aria-hidden="true"></i>
-				<i class="fa fa-close" style="font-size:24px;color:red" aria-hidden="true"></i>
-			</div>
+				<!--<i class="fa fa-close" style="font-size:24px;color:red" aria-hidden="true"></i>
+			   -->
+      </div>
 		</div>
 		<div class="messages">
 			<ul>
@@ -948,7 +949,7 @@ function newMessage() {
 	if($.trim(message) == '') {
 		return false;
 	}
-	$('<li class="sent"><img src="http://emilcarlsson.se/assets/mikeross.png" alt="" /><p>' + message + '</p></li>').appendTo($('.messages ul'));
+	$('<li class="sent"><img src="img/tumz.jpg" alt="" /><p>' + message + '</p></li>').appendTo($('.messages ul'));
 	$('.message-input input').val(null);
 	$('.contact.active .preview').html('<span>You: </span>' + message);
 	$(".messages").animate({ scrollTop: $(document).height() }, "fast");
